@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">iThink</string>
+    <string name="head">FIND THE NUMBER I THINK</string>
+    <string name="option">Enter your Guess : </string>
+    <string name="check">Check </string>
+    <string name="replay">START NEW </string>
+</resources>
