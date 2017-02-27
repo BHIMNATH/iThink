@@ -83,7 +83,7 @@ public class Home extends AppCompatActivity {
         }).show();
     }
     public void thinkBet(View view){
-        alert.setTitle("Help").setMessage("The Computer think a number between 0 to 10. Find the number in less tries")
+        alert.setTitle("Help").setMessage("The Computer think a number between 0 to 99. Find the number in less tries. Very hard to find")
                 .setCancelable(false).setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
