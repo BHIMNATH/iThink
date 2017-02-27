@@ -78,7 +78,20 @@ public class Home extends AppCompatActivity {
                 .setCancelable(false).setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                
+
+            }
+        }).show();
+    }
+    public void thinkBet(View view){
+        alert.setTitle("Help").setMessage("The Computer think a number between 0 to 10. Find the number in less tries")
+                .setCancelable(false).setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                guessGet.setText("");
+                myNo=(int) (Math.random()*100);
+                tri=0;
+                Toast.makeText(Home.this,"I thought a New Number between 0-99",Toast.LENGTH_LONG).show();
+                mainBut.setVisibility(View.VISIBLE);
             }
         }).show();
     }

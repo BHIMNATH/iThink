@@ -5,4 +5,5 @@
     <string name="check">Check </string>
     <string name="replay">START NEW </string>
     <string name="help">HELP ?</string>
+    <string name="limit">THINK 0-99</string>
 </resources>
