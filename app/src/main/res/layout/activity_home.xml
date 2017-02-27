@@ -76,6 +76,19 @@
             android:textColor="#ffffff"
             android:background="#195a3d" />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/help"
+            android:id="@+id/button3"
+            android:textColor="#ffffff"
+            android:background="#334273"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/enter_option"
+            android:layout_toStartOf="@+id/enter_option" />
+
     </RelativeLayout>
 
 </RelativeLayout>

@@ -4,4 +4,5 @@
     <string name="option">Enter your Guess : </string>
     <string name="check">Check </string>
     <string name="replay">START NEW </string>
+    <string name="help">HELP ?</string>
 </resources>
