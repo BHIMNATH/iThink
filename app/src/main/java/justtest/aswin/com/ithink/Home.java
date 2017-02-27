@@ -73,4 +73,13 @@ public class Home extends AppCompatActivity {
         Toast.makeText(this,"I thought a New Number",Toast.LENGTH_LONG).show();
         mainBut.setVisibility(View.VISIBLE);
     }
+    public void helpMe(View view){
+        alert.setTitle("Help").setMessage("The Computer think a number between 0 to 10. Find the number in less tries")
+                .setCancelable(false).setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+            }
+        }).show();
+    }
 }

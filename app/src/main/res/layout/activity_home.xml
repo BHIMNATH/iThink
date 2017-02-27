@@ -87,7 +87,8 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_toLeftOf="@+id/enter_option"
-            android:layout_toStartOf="@+id/enter_option" />
+            android:layout_toStartOf="@+id/enter_option"
+            android:onClick="helpMe"/>
 
     </RelativeLayout>
 
