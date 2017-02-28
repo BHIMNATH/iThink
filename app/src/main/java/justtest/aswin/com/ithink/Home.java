@@ -23,6 +23,8 @@ public class Home extends AppCompatActivity {
         alert=new AlertDialog.Builder(this);
         guessGet=(EditText) findViewById(R.id.enter_option);
         mainBut=(Button) findViewById(R.id.button);
+        guessGet.setEnabled(false);
+        mainBut.setEnabled(false);
     }
     public void checkGuess(View view){
         String got=guessGet.getText().toString().trim();
@@ -67,6 +69,8 @@ public class Home extends AppCompatActivity {
         }
     }
     public void newTry(View view){
+        guessGet.setEnabled(true);
+        mainBut.setEnabled(true);
         guessGet.setText("");
         myNo=(int) (Math.random()*10);
         tri=0;
@@ -74,7 +78,7 @@ public class Home extends AppCompatActivity {
         mainBut.setVisibility(View.VISIBLE);
     }
     public void helpMe(View view){
-        alert.setTitle("Help").setMessage("The Computer think a number between 0 to 10. Find the number in less tries")
+        alert.setTitle("Help").setMessage("The Computer think a number between 0 to 9 or 0 to 99. Choose your option. Find the number in less tries")
                 .setCancelable(false).setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -83,6 +87,8 @@ public class Home extends AppCompatActivity {
         }).show();
     }
     public void thinkBet(View view){
+        guessGet.setEnabled(true);
+        mainBut.setEnabled(true);
         alert.setTitle("Help").setMessage("The Computer think a number between 0 to 99. Find the number in less tries. Very hard to find")
                 .setCancelable(false).setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
