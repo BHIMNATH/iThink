@@ -3,7 +3,7 @@
     <string name="head">FIND THE NUMBER I THINK</string>
     <string name="option">Enter your Guess : </string>
     <string name="check">Check </string>
-    <string name="replay">START NEW </string>
+    <string name="replay_9">THINK 0-9 </string>
     <string name="help">HELP ?</string>
-    <string name="limit">THINK 0-99</string>
+    <string name="replay_99">THINK 0-99</string>
 </resources>
