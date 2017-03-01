@@ -52,8 +52,7 @@ public class Home extends AppCompatActivity {
                     }).show();
                 }
                 mainBut.setVisibility(View.INVISIBLE);
-            }
-            else {
+            }       else {
                 alert.setTitle("Result").setMessage("Sorry! Wrong Answer")
                         .setCancelable(false).setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
