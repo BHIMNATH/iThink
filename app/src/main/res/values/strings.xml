@@ -6,4 +6,5 @@
     <string name="replay_9">THINK 0-9 </string>
     <string name="help">HELP ?</string>
     <string name="replay_99">THINK 0-99</string>
+    <string name="clue">CLUE</string>
 </resources>

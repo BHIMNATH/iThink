@@ -100,4 +100,34 @@ public class Home extends AppCompatActivity {
             }
         }).show();
     }
+    public void needClue(View view){
+        if(myNo!=guessNo) {
+            if(myNo>guessNo) {
+                alert.setTitle("Clue1").setMessage("Entered number is Greater than the guessed Number")
+                        .setCancelable(false).setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        guessGet.setText("");
+                        myNo = (int) (Math.random() * 100);
+                        tri = 0;
+                        Toast.makeText(Home.this, "I thought a New Number between 0-99", Toast.LENGTH_LONG).show();
+                        mainBut.setVisibility(View.VISIBLE);
+                    }
+                }).show();
+            }
+            else {
+                alert.setTitle("Clue1").setMessage("Entered number is Less than the guessed Number")
+                        .setCancelable(false).setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        guessGet.setText("");
+                        myNo = (int) (Math.random() * 100);
+                        tri = 0;
+                        Toast.makeText(Home.this, "I thought a New Number between 0-99", Toast.LENGTH_LONG).show();
+                        mainBut.setVisibility(View.VISIBLE);
+                    }
+                }).show();
+            }
+        }
+    }
 }
